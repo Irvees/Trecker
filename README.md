@@ -45,15 +45,15 @@
 ###  Как запустить
 
 ## Требования:
-Python 3.8 или выше
-pip (менеджер пакетов Python)
+- Python 3.8 или выше
+- pip (менеджер пакетов Python)
 
 ## Установка:
-Откройте терминал в папке backend
-Введите: cd backend
-Введите: pip install -r requirements.txt
-Введите: python app.py
-Откройте браузер: http://localhost:5000
+- Откройте терминал в папке backend
+- Введите: cd backend
+- Введите: pip install -r requirements.txt
+- Введите: python app.py
+- Откройте браузер: http://localhost:5000
 
 ---
 
