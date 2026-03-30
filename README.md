@@ -59,20 +59,20 @@
 
 #### Структура проекта
 proekt/
-├── backend/
-│   ├── app.py              # Главный файл приложения
-│   ├── database.py         # Работа с базой данных
-│   ├── automation.py       # Автоматизация + Email
-│   ├── requirements.txt    # Зависимости Python
-│   ├── timetracker.db      # База данных SQLite*
-│   └── reports/            # Папка для отчётов*
-├── templates/
-│   └── index.html          # HTML-шаблон страницы
-├── static/
-│   ├── style.css           # Стили страницы
-│   └── script.js           # Клиентская логика
-├── .gitignore              # Игнорируемые файлы
-└── README.md               # Этот файл
+- backend/
+    - app.py              # Главный файл приложения
+    - database.py         # Работа с базой данных
+    - automation.py       # Автоматизация + Email
+    - requirements.txt    # Зависимости Python
+    - timetracker.db      # База данных SQLite*
+    - reports/            # Папка для отчётов*
+- templates/
+    - index.html          # HTML-шаблон страницы
+- static/
+    - style.css           # Стили страницы
+    - script.js           # Клиентская логика
+- .gitignore              # Игнорируемые файлы
+-  README.md              # Этот файл
 ## * — не загружается в GitHub (генерируется автоматически)
 
 ---
