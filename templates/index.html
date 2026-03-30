@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⏱ Трекер времени</title>
+    
+    <!-- Подключаем внешний файл стилей -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>⏱ Трекер рабочего времени</h1>
+        <p>Простая система учёта времени для студентов</p>
+        
+        <label>Название проекта:</label>
+        <input type="text" id="project" placeholder="Например: Курсовая работа">
+        
+        <label>Описание задачи:</label>
+        <input type="text" id="description" placeholder="Например: Писать код">
+        
+        <div>
+            <button class="btn-start" onclick="startTimer()">▶ Старт</button>
+            <button class="btn-stop" onclick="stopTimer()">⏹ Стоп</button>
+            <button class="btn-export" onclick="exportReport()">📥 Скачать отчёт</button>
+            <button onclick="loadEntries()">🔄 Обновить таблицу</button>
+        </div>
+        
+        <div id="status"></div>
+        
+        <h2>📊 История записей</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Проект</th>
+                    <th>Описание</th>
+                    <th>Начало</th>
+                    <th>Конец</th>
+                    <th>Время (сек)</th>
+                </tr>
+            </thead>
+            <tbody id="entriesTable">
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Подключаем внешний файл скриптов -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
